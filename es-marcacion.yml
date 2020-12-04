@@ -1,0 +1,24 @@
+server:
+  port: 8071
+  
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/GOTALENT
+    username: postgres
+    password: 0926791583
+    driver-class-name: org.postgresql.Driver
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      jdbc:
+        lob:
+         non_contextual_creational: true
+         
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: myGroup

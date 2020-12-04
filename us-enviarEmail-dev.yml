@@ -1,0 +1,28 @@
+server:
+  port: 8085
+  
+  
+  
+spring:
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    password: iebzmuihypsaviwm
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          starttls:
+            enable: true
+            required: true
+          timeout: 5000
+          writetimeout: 5000
+    username: jonathanmoreira70@gmail.com
+    
+# ESPECIFICACION DEL KAFKA SERVER  
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: myGroup

@@ -1,0 +1,6 @@
+server:
+  port: 8090
+  
+uri:
+  marcacion: http://localhost:8071
+  marcaciones-externas: http://localhost:8080
